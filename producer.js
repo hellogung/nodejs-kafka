@@ -11,7 +11,7 @@ const producer = kafka.producer({
 
 await producer.connect()
 
-for (let i = 0; i < 100000; i++) {
+for (let i = 0; i < 10; i++) {
     await producer.send({
         topic: "helloworld",
         messages: [
